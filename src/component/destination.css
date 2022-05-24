@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Bellefair&display=swap');
+:root {
+    --font-1: 'Barlow Condensed', sans-serif;
+    --font-2: 'Bellefair', serif;
+    --font-weight: 400;
+  
+}
+section{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+article>h1{
+    font-family: var(--font-1);
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: var(--font-weight);
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
+    color:#FFFFFF;
+    text-align: center;
+}
+article>h1>span{
+    opacity: 25%;
+    font-size: 19px;
+    padding:0 1rem; 
+}
+
+#celestial{
+    margin: 2rem 3rem;
+    height: 170px;
+    width: 170px;
+
+}
+#celestialBodies{
+    font-family: var(--font-1);
+    font-weight: var(--font-weight);
+    outline:none;
+    border:none;
+    margin:2rem 0rem;
+    margin-left: .5rem;
+    padding-left:1rem;
+    background: none;
+    color: #D0D6F9;
+    font-size:14px;
+    line-height: 17px;
+    vertical-align: top;
+    letter-spacing: 2.36px;
+    text-align: center;
+}
+#crew{
+    
+    padding:0rem 2rem;
+    margin-top: 2rem;
+    width: 327px;
+    height: 223px;
+    margin-left: 2rem;
+}
+#crews{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin: 0rem 1rem;
+    transform: translateX(99%);
+    background-color: gray;
+    outline:none;
+    border:none;
+    margin-bottom: 2rem;
+
+}
+h2{
+    text-align: center;
+}
+#crews:focus{
+    background-color: white;
+}
+#celestialBodies:focus{
+    padding-bottom:2rem;
+    border-bottom:2px solid white;
+}
+
+article>h3{
+    font-family: var(--font-2);
+    font-weight: var(--font-weight);
+    font-size: 56px;
+    text-align: center;
+    line-height: 64px;
+    /* font-style: normal; */
+    margin-top: -0.1rem;
+}
+article>p{
+    font-size: 17px;
+    line-height: 25px;
+    vertical-align: top;
+    text-align: center;
+    margin-top: -2rem;
+    color: #D0D6F9;
+    font-family: var(--font-1);
+    font-weight: var(--font-weight);
+
+}
+#desktop-img{
+    display: none;
+}
+article>ul,article>ul>li{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding:1rem 0rem;
+    font-family: var(--font-1);
+    font-weight: var(--font-weight);
+    text-align: center;
+    margin: 0rem 2rem 0 ;
+    font-size: 30px;
+    line-height: 32.09px;
+    color: #D0D6F9;
+    line-height: 16.8px;
+    letter-spacing: 2.36px;
+    
+}
+li>span{
+    font-size: 14px;
+}
+hr{
+    color:#383B4B;
+    opacity: .5;
+}
+.col2{
+    margin-bottom: 2rem;
+}
+
+
+
+@media only Screen and (min-width:769px){
+    body{
+        overflow-y: scroll;
+    }
+    section{
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-column: 1fr 1fr;
+    }
+    article>p{
+        font-size: 21px;
+        line-height: 32px;
+        text-align: left;
+       padding:0rem 3rem;
+    }
+    article>h1{
+        transform: translateX(0%);
+        font-size: 28px;
+
+    }
+  
+    article>h1>span{
+        font-size: 28px;
+    }
+    #celestial,#crew{
+        transform: translateX(12%);
+        height: 445px;
+        width: 445px;
+    }
+    #celestialBodies{
+        font-size: 16px;
+        padding:0rem 4rem;
+        
+       
+    }
+    #cw{
+        transform: translateY(-50%);
+
+    }
+    
+    #col1{
+        order:1
+    }
+    .col2{
+        margin-top: 5rem;
+        order:2;
+    }
+    #crews,#tech{
+        margin-left: 6rem;
+    }
+    .top{
+     text-align: center;
+    }
+    #desktop-img{
+        display: block;
+        margin-left: 5rem;
+        transform: translateX(12%);
+    height: 445px;
+    width: 445px;
+    }
+    #mobile-img{
+        display: none;
+    }
+    .col2>h3{
+        font-size: 100px;
+        line-height: 115px;
+        line-height: 100%;
+       
+    }
+   
+    
+    .col2>ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .col2>ul>li>span{
+        line-height: 17px;
+        text-align: left;
+    }
+    .col2>ul>li{
+        font-size: 28px;
+        font-family: var(--font-2);
+    }
+}
+@media only Screen and (min-width:400px) and (max-width:768px){
+    section{
+        display: grid;
+        display: -ms-grid;
+        grid-template-rows: 1fr 1fr;
+        -ms-grid-row: 1fr 1fr;
+    }
+    article>p{
+        font-size: 21px;
+        line-height: 32px;
+        text-align: left;
+       padding:0rem 3rem;
+    }
+    article>h1{
+        transform: translateX(2%);
+        margin: 1rem 0rem;
+        font-size: 28px;
+
+    }
+    #col1{
+        order:2
+    }
+    #desktop-img{
+        display: none;
+    }
+    article>h1>span{
+        font-size: 28px;
+    }
+    #celestial,#crew{
+        transform: translateX(12%);
+        height: 445px;
+        width: 445px;
+    }
+    article>h2{
+        text-align: center;
+    }
+    #crew{
+      
+         height: 572px;
+         width: 456.37px;
+         order:2
+    }
+    #celestialBodies{
+        font-size: 16px;
+        padding:1rem 2rem;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+        
+       
+    }
+    #crews{
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        margin: 0rem 2rem;
+        transform: translateX(500%);
+        background-color: gray;
+        outline:none;
+        border:none;
+        margin-bottom: 2rem;
+    
+    }
+    #crews:focus{
+        background-color: white;
+    }
+    .col2>h3{
+        font-size: 100px;
+        line-height: 115px;
+        line-height: 100%;
+        padding:0rem 1rem;
+       
+    }
+    
+   
+    
+    .col2>ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .col2>ul>li>span{
+        line-height: 17px;
+        text-align: left;
+    }
+    .col2>ul>li{
+        font-size: 28px;
+        font-family: var(--font-2);
+    }
+
+
+}
